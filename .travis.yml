@@ -22,18 +22,17 @@ matrix:
     - env: AFTER_SCRIPT='sh .uuv_ci_config/run_tests.sh' USE_DEB=true ROS_DISTRO=kinetic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu NOT_TEST_BUILD=true NOT_TEST_INSTALL=true AFTER_SETUP_TARGET_WORKSPACE='sh .uuv_ci_config/ros_$ROS_DISTRO.sh && sh .uuv_ci_config/install_gazebo9.sh' ROSDEP_SKIP_KEYS="gazebo gazebo_dev gazebo_msgs gazebo_plugins gazebo_ros gazebo_ros_control gazebo_ros_pkgs"
     - env: PRERELEASE=true USE_DEB=true ROS_DISTRO=melodic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu NOT_TEST_BUILD=true NOT_TEST_INSTALL=true AFTER_SETUP_TARGET_WORKSPACE='sh .uuv_ci_config/ros_$ROS_DISTRO.sh'
     - env: AFTER_SCRIPT='sh .uuv_ci_config/run_tests.sh' USE_DEB=true ROS_DISTRO=melodic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu NOT_TEST_BUILD=true NOT_TEST_INSTALL=true AFTER_SETUP_TARGET_WORKSPACE='sh .uuv_ci_config/ros_$ROS_DISTRO.sh'
-  allow_failures:
     - env: AFTER_SCRIPT='sh .uuv_ci_config/run_tests.sh' USE_DEB=true ROS_DISTRO=melodic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu NOT_TEST_BUILD=true NOT_TEST_INSTALL=true AFTER_SETUP_TARGET_WORKSPACE='sh .uuv_ci_config/ros_$ROS_DISTRO.sh' ROS_PYTHON_VERSION=3 ROS_FROM_SCRATCH=true
 
 install:
   - git clone --single-branch --branch python3-noetic https://github.com/ipa-mdl/industrial_ci.git .ci_config
 script:
   - source .ci_config/travis.sh
-notifications:
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/a8c9c6426a721fbb8341
-    on_success: change
-    on_failure: always
-    on_start: never
-  slack: uuvsimulator:CeZErwayGqGpYxJaLzCEbjip
+#notifications:
+#  webhooks:
+#    urls:
+#      - https://webhooks.gitter.im/e/a8c9c6426a721fbb8341
+#    on_success: change
+#    on_failure: always
+#    on_start: never
+#  slack: uuvsimulator:CeZErwayGqGpYxJaLzCEbjip
