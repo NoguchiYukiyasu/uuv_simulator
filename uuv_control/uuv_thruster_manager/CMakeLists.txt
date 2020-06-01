@@ -34,7 +34,10 @@ install(DIRECTORY launch config
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
         PATTERN "*~" EXCLUDE)
 
-if (CATKIN_ENABLE_TESTING)
+#if (CATKIN_ENABLE_TESTING)
+  install(DIRECTORY test
+          DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+          PATTERN "*~" EXCLUDE)
   find_package(rostest REQUIRED)
   foreach(T
       test/test_thrusters.test
@@ -45,4 +48,4 @@ if (CATKIN_ENABLE_TESTING)
       )
      add_rostest(${T})
   endforeach()
-endif()
+#endif()
