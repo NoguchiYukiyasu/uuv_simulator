@@ -10,6 +10,8 @@ env:
   global:
     - LIBGL_ALWAYS_SOFTWARE=1
     - VERBOSE_OUTPUT='false'
+    - CATKIN_PARALLEL_JOBS='-p1'
+    - ROS_PARALLEL_JOBS='-j1'
     - CCACHE_DIR=$HOME/.ccache
     - CATKIN_LINT=true
     - CATKIN_LINT_ARGS="--ignore link_directory"
@@ -23,7 +25,7 @@ matrix:
 install:
   - git clone https://github.com/ros-industrial/industrial_ci.git .ci_config -b legacy
 script:
-  - travis_wait 30 .ci_config/travis.sh
+  - .ci_config/travis.sh
 notifications:
   webhooks:
     urls:
