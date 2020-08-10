@@ -15,5 +15,5 @@
 # limitations under the License.
 
 apt update
-apt install git
+apt -qq install --no-install-recommends -y git
 pip3 install --user git+https://github.com/catkin/catkin_tools.git
