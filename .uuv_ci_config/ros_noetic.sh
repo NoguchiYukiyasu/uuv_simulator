@@ -14,4 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+apt update
+apt install git
 pip3 install --user git+https://github.com/catkin/catkin_tools.git
