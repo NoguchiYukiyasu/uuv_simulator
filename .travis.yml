@@ -21,7 +21,7 @@ matrix:
     - env: ROS_DISTRO=kinetic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - env: PRERELEASE=true ROS_DISTRO=melodic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - env: ROS_DISTRO=melodic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
-    - env: PRERELEASE=true ROS_DISTRO=noetic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu AFTER_SETUP_TARGET_WORKSPACE='sh .uuv_ci_config/ros_$ROS_DISTRO.sh'
+    - env: PRERELEASE=true ROS_DISTRO=noetic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
     - env: ROS_DISTRO=noetic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu AFTER_SETUP_TARGET_WORKSPACE='sh .uuv_ci_config/ros_$ROS_DISTRO.sh'
   
 install:

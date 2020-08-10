@@ -14,5 +14,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-apt update
-apt -qq install --no-install-recommends -y python3-catkin-tools
+pip3 install --user git+https://github.com/catkin/catkin_tools.git
