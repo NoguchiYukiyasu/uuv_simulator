@@ -31,6 +31,7 @@
     </node>
 
     <test test-name="test_thruster_allocator_x_axis"
+      time-limit="120.0"
       pkg="uuv_thruster_manager"
       type="test_thruster_allocator.py"/>
 </launch>
