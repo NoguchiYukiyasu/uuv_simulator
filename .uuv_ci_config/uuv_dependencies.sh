@@ -16,4 +16,4 @@
 
 apt update
 apt -qq install --no-install-recommends -y git
-pip3 install --user git+https://github.com/catkin/catkin_tools.git 
+pip install --user git+https://github.com/catkin/catkin_tools.git 
