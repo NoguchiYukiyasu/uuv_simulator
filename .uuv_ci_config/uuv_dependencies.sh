@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# DEP PACKAGES
-apt -qq install --no-install-recommends --allow-unauthenticated -y \
-  build-essential python-catkin-tools python-pip dvi2ps dvipng binutils \
-  mesa-utils module-init-tools x-window-system ros-$ROS_DISTRO-python-orocos-kdl
+apt update
+apt -qq install --no-install-recommends -y git
+pip3 install --user git+https://github.com/catkin/catkin_tools.git 
