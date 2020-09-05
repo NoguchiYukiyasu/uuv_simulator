@@ -15,6 +15,7 @@ env:
     - CCACHE_DIR=$HOME/.ccache
     - CATKIN_LINT=true
     - CATKIN_LINT_ARGS="--ignore link_directory"
+    - NOT_TEST_BUILD=true
 matrix:
   include:
     - env: PRERELEASE=true ROS_DISTRO=kinetic ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
