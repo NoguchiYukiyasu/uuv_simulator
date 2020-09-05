@@ -15,6 +15,10 @@
 # limitations under the License.
 
 cd $CATKIN_WORKSPACE
+echo "---------source-----------"
+echo $ROS_DISTRO
+source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 source devel/setup.bash
 catkin run_tests
 catkin_test_results
