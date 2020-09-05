@@ -17,9 +17,11 @@
 cd $CATKIN_WORKSPACE
 echo "---------source-----------"
 echo $ROS_DISTRO
+echo ls
 source /opt/ros/kinetic/setup.bash
 source /opt/ros/melodic/setup.bash
 source devel/setup.bash
+source install/setup.bash
 catkin run_tests
 catkin_test_results
 
