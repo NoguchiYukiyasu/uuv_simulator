@@ -15,5 +15,4 @@
 # limitations under the License.
 
 apt update
-apt -qq install --no-install-recommends -y git
-pip install --user git+https://github.com/catkin/catkin_tools.git 
+apt -qq install --no-install-recommends -y python-catkin-tools
