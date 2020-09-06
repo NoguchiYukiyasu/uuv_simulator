@@ -17,7 +17,7 @@ import rospy
 import roslib
 import unittest
 import numpy as np
-from uuv_thrusters import ThrusterManager
+from uuv_thrusters.thruster_manager import ThrusterManager
 
 PKG = 'uuv_thruster_manager'
 roslib.load_manifest(PKG)
