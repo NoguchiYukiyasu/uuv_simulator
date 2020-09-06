@@ -10,8 +10,11 @@ env:
   global:
     - BUILDER='catkin_tools'
     - LIBGL_ALWAYS_SOFTWARE=1
-    - VERBOSE_OUTPUT='false'
+    - VERBOSE_OUTPUT='true'
+    - VERBOSE_TESTS='true'
     - PARALLEL_BUILDS=1
+    - PARALLEL_TESTS=1
+    - IMMEDIATE_TEST_OUTPUT='true'
     - CCACHE_DIR=$HOME/.ccache
     - CATKIN_LINT=true
     - CATKIN_LINT_ARGS="--ignore link_directory"
