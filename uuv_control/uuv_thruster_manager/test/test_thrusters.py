@@ -18,8 +18,8 @@ import unittest
 import numpy as np
 import random
 from tf_quaternion import transformations
-from uuv_thrusters import ThrusterManager
-from uuv_thrusters.models import Thruster
+from uuv_thrusters.thruster_manager import ThrusterManager
+from uuv_thrusters.models.thruster import Thruster
 
 PKG = 'uuv_thruster_manager'
 roslib.load_manifest(PKG)
